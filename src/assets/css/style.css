@@ -1,0 +1,168 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* iPhone container */
+.iphone-container {
+    width: 260px;
+    height: 556px;
+    background: #000;
+    border-radius: 40px;
+    position: relative;
+    border: 2px solid #333;
+    margin: 50px auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+    z-index: 997;
+}
+
+/* Time in the top bar */
+.top-bar .time p {
+    font-size: 13.5px;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+/* Battery icon in the top bar */
+.top-bar .battery {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Notch at the top */
+.notch {
+    width: 110px;
+    height: 20px;
+    background: #333;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    z-index: 998;
+}
+
+/* Screen area */
+.screen {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    position: absolute;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+/* Bottom bar */
+.bottom-bar {
+    width: 120px;
+    height: 3px;
+    background: #ffffffb2;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+/* Battery icon in the top bar */
+.top-bar .battery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 15px;
+    top: 6px;
+}
+
+.top-bar .battery i {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.output{
+    width: 100%;
+    height: 180px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    z-index: 999;
+    padding: 10px; 
+}
+
+.output p{
+    color: #ffffff67;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+    .output .result-text{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    }
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    color: #fff;
+    width: 62px;
+    aspect-ratio: 1/1;
+    border: none;
+    background-color: #cecbcb18;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 24px;
+}
+
+.btn:hover{
+    background-color: #cecbcb3a;
+}
+
+.control{
+    background-color: #5e5d5dc9;
+}
+
+.control:hover{
+    background-color: #5e5d5d;
+}
+
+.cal-btn{
+    background-color: #f58a10;
+}
+
+.cal-btn:hover{
+    background-color: #f58a10c9;
+}
